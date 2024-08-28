@@ -1,17 +1,24 @@
 # Flatworm CpG methylation exploration
 
-## Aim
+## Aim:
 There is no real consensus of CpG methylation presence in flatworm genomes <sup>[1](#myfootnote1),[2](#myfootnote2),[3](#myfootnote3),[4](#myfootnote4)</sup>.
 
 Using PacBio HiFi read kinetics I attempt to find evidence for CpG methylation in flatworms.
 
-## Repo structure
+## Repo structure:
 
 I divided the project into two subparts. 
 
 1. Indirect evidence for mCpG presence could be the presence of CpG islands. Hence a CpG island analysis of flatworm and other genomes is found in the `cpg_island/` directory.
 2. Using kinetic information extracted during the sequencing and deep learning models I called CpG modifications in the _S.mediterranea_ genome. The analyses for this sub-project can be found in the `cytosine_methylation/` directory.
 
+## Some VERY SUPERFICIAL conclusions:
+
+* CpG methylation might be present at very low levels (see: `cytosine_methylation/outputs/cpg_methlyation-perc_genome-wide_histogram.pdf`). 
+
+* The methylation percentage around gene bodies is low, especially in the promoter regions (see: `cytosine_methylation/outputs/ssmed_5mC_profile-mean.pdf`).
+
+* As the PacBio reads originate from whole adults information is lost from different cell lineages. Might be some more interesting things present in specific cell lines. Or not.
 
 
 ## Bibliography:
